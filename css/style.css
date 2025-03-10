@@ -4,6 +4,15 @@ header {
     width: 100%;
 }
 
+#container{
+    width: 80%;
+    margin: auto;
+    background-color: darkgrey;
+    height: 50%;
+    border-radius: 25px;
+
+}
+
 div {
     height: 400px; /* Anpassa efter bildens storlek */
     width: 100%;
