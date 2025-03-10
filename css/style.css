@@ -1,3 +1,19 @@
-body{
-    color: green;
+header {
+    background-color: #666; /* Grå bakgrund */
+    height: 80px; /* Justera efter behov */
+    width: 100%;
+}
+
+div {
+    height: 400px; /* Anpassa efter bildens storlek */
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 22.5px;
+
+}
+
+footer {
+    background-color: white; /* Vit bakgrund */
+    height: 200px; /* Justera efter behov */
+    width: 100%;
 }
