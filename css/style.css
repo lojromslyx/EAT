@@ -1,7 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -16,60 +12,99 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: "Alata", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    background: #333;
 }
 
 header {
     background: #666;
-    height: 80px; /* Justera efter behov */
-    width: 95%;
-    border-radius: 15px;
+    height: 80px;
+    width: 94%;
+    border-radius: 50px;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
 }
 
-#container{
+#container {
     width: 80%;
     background-color: darkgrey;
     height: 50%;
-    border-radius: 25px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
 }
 
-nav{
+nav {
     display: flex;
-    justify-content: space-evenly; /* lägger ut nav-objekt med lika stort mellanrum */
+    justify-content: space-evenly;
     list-style: none;
-    font-family: "Alata", sans-serif; /* ändrar font på nav-objekt */
     font-weight: 400;
-    font-style: normal;
     align-items: center;
+    margin-top: 10px;
 }
 
 nav a {
-    text-decoration: none; /* tar bort understreck*/
-    color: inherit; /* tar bort blå länk färg*/
+    text-decoration: none;
+    color: inherit;
 }
 
 nav a:hover {
-    color: #717171; /* Skapar en hover effekt på nav-objekt*/
+    color: #717171;
 }
 
-.bild {
-    height: 520px; /* Anpassa efter bildens storlek */
-    width: 100%;
-    margin-top: 5px;
+.wrapper {
+    width: 95%;
+    margin: 10px auto;
+    overflow: auto;
 }
 
-footer {
-    background-color: #666; /* Vit bakgrund */
-    height: 200px; /* Justera efter behov */
+h1 {
+    text-align: center;
+}
+
+.slider-outer {
     width: 100%;
-    border-radius: 10px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-inner {
+    width: 95%;
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #666 solid 1px;
+}
+
+
+.slider-inner img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+
+.slider-inner img.active {
+    opacity: 1;
+    z-index: 1;
 }
