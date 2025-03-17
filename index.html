@@ -3,27 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <header>
         <div id="container">
             <nav>
-                <li> <a href=".html">AGERA</a></li>
-                <li> <a href=".html">JESKO</a></li>
-                <li> <a href=".html">GEMERA</a></li>
-                <li> <a href=".html">CC850</a></li>
-                <li> <a href=".html">REGERA</a></li>
-                <li> <a href=".html">KONTAKT</a></li>
+                <li><a href=".html">AGERA</a></li>
+                <li><a href=".html">JESKO</a></li>
+                <li><a href=".html">GEMERA</a></li>
+                <li><a href=".html">CC850</a></li>
+                <li><a href=".html">REGERA</a></li>
+                <li><a href=".html">KONTAKT</a></li>
             </nav>
         </div>
     </header>
-    <div class="bild">
-        <img src="bilder/Car.jpg" alt="koenigsegg">
+    
+    <div class="wrapper">
+        <h1></h1>
+        <div class="slider-outer">
+            <div class="slider-inner">
+                <img src="bilder/Agera.jpg" class="active">
+                <img src="bilder/Gemera.jpg">
+                <img src="bilder/Regera.jpg">
+            </div>
+        </div>
     </div>
-    <footer>
-        
-    </footer>
+
+    <footer></footer>
 </body>
 </html>
