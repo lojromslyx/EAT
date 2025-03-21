@@ -72,4 +72,83 @@ footer {
     height: 200px; /* Justera efter behov */
     width: 100%;
     border-radius: 10px;
+    display: flex;
+    font-family: "Alata", sans-serif;
+}
+
+#skapare{
+
+    font-size: 200%;
+    margin-left: 10%;
+
+}
+
+#skapare1{
+
+    font-size: 50%;
+
+}
+
+#skapare2{
+
+    font-size: 50%;
+
+}
+
+#skapare3{
+
+    font-size: 50%;
+
+}
+
+#skapare-info{
+
+    font-size: 200%;
+    margin-left: 10%; 
+
+}
+
+#skapare-info1{
+
+    font-size: 50%;
+
+}
+
+#info{
+
+    font-size: 200%;
+    margin-left: 10%;
+
+}
+
+#info1{
+
+    font-size: 50%;
+
+}
+
+#uppdaterad{
+
+    font-size: 200%;
+    margin-left: 10%;
+
+}
+
+#uppdaterad1{
+
+    font-size: 50%;
+
+}
+
+#favorit{
+
+    font-size: 200%;
+    margin-left: 10%; 
+
+}
+
+#favorit1{
+
+    font-size: 50%;
+
 }
