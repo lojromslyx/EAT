@@ -11,15 +11,23 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    background: #333;
 }
 
 header {
+
     background: #666;
     height: 80px; /* Justera höjden efter behov */
     width: 100%;
@@ -29,9 +37,10 @@ header {
     align-items: center;
 }
 
-#container { 
+#container {
+
     width: 80%;
-    background-color: darkgrey;
+    background-color: rgb(107, 104, 104);
     height: 50%;
     border-radius: 25px;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
@@ -81,19 +90,94 @@ nav {
 
 .nav-links a:hover {
     color: #5b5959;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
 }
 
-.bild {
-    height: 520px; /* Anpassa efter bildens storlek */
+ol {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-weight: 400;
+    align-items: center;
+    margin-top: 10px;
+}
+
+ol a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ol a:hover {
+    color: #717171;
+}
+
+.wrapper {
+    width: 95%;
+    margin: 10px auto;
+    overflow: auto;
+    position: relative; 
+}
+
+h1 {
+    text-align: center;
+}
+
+.slider-outer {
     width: 100%;
-    margin-top: 5px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer {
     background-color: #666; /* grå bakgrund */
     height: 200px; /* Justera höjd efter behov */
+  }
+  
+.slider-inner {
+    width: 95%;
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #666 solid 1px;
+}
+
+
+.slider-inner img {
+    position: absolute;
     width: 100%;
-    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+
+.slider-inner img.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+
+#LogoContainer{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    margin-right: 3%;
+}
+Style
+
+body {
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 @media (max-width: 768px) {  /* mobilanpassning, fixar en hamburgermenu som visar navlinks i mobilvy */
@@ -128,3 +212,31 @@ footer {
     }
     
 }
+
+#Title1 {
+    margin-top: 7%;
+    position: absolute; 
+    top: 20px;       
+    left: 50%;         
+    transform: translateX(-50%) scale(1);
+    color: #c6ab1fe7;    
+    font-size: 100px;
+    font-family: 'Orbitron', sans-serif; 
+    z-index: 10;         
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+    border: 2px solid black;
+    border-radius: 10%;
+    padding: 10px 20px;
+
+}
+
+#Title1:hover {
+    transform: translateX(-50%) scale(1.1); 
+    color: #ffffff; 
+    box-shadow: 20px 20px 40px #ffffffaa;
+}
+
+
