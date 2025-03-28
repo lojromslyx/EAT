@@ -6,7 +6,7 @@ $(document).ready(function() {
         let currentImg = images.eq(index);
         let nextIndex = (index + 1) % images.length;
         let nextImg = images.eq(nextIndex);
-        
+
         images.css("opacity", "0");
 
         nextImg.css("opacity", "1");

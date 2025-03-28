@@ -21,32 +21,31 @@ time, mark, audio, video {
 }
 
 body {
-    font-family: "Alata", sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 14px;
-    color: #fff;
+    color: #ffffff;
     background: #333;
 }
 
 header {
-    background: #666;
+    background: #535353;
     height: 80px;
     width: 94%;
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 3%;
 }
 
 #container {
     width: 80%;
-    background-color: darkgrey;
+    background-color: rgb(107, 104, 104);
     height: 50%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
 }
 
-nav {
+ol {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
@@ -55,12 +54,12 @@ nav {
     margin-top: 10px;
 }
 
-nav a {
+ol a {
     text-decoration: none;
     color: inherit;
 }
 
-nav a:hover {
+ol a:hover {
     color: #717171;
 }
 
@@ -68,6 +67,7 @@ nav a:hover {
     width: 95%;
     margin: 10px auto;
     overflow: auto;
+    position: relative; 
 }
 
 h1 {
@@ -108,3 +108,48 @@ h1 {
     opacity: 1;
     z-index: 1;
 }
+
+
+#LogoContainer{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    margin-right: 3%;
+}
+Style
+
+body {
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#Title1 {
+    margin-top: 7%;
+    position: absolute; 
+    top: 20px;       
+    left: 50%;         
+    transform: translateX(-50%) scale(1);
+    color: #c6ab1fe7;    
+    font-size: 100px;
+    font-family: 'Orbitron', sans-serif; 
+    z-index: 10;         
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+    border: 2px solid black;
+    border-radius: 10%;
+    padding: 10px 20px;
+
+}
+
+#Title1:hover {
+    transform: translateX(-50%) scale(1.1); 
+    color: #ffffff; 
+    box-shadow: 20px 20px 40px #ffffffaa;
+}
+
+
