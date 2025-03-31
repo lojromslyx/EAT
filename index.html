@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="description" content="Världens bästa Koenigsegg sida.">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+        <div id="LogoContainer">
+            <img src="bilder/logo.png" alt="logo" id="logo"> 
+        </div>
         <div id="container">
-            <nav>
-                <li> <a href=".html">AGERA</a></li>
-                <li> <a href=".html">JESKO</a></li>
-                <li> <a href=".html">GEMERA</a></li>
-                <li> <a href=".html">CC850</a></li>
-                <li> <a href=".html">REGERA</a></li>
-                <li> <a href=".html">KONTAKT</a></li>
-            </nav>
+            <ol>
+                <li><a href=".html">AGERA</a></li>
+                <li><a href=".html">JESKO</a></li>
+                <li><a href=".html">GEMERA</a></li>
+                <li><a href=".html">CC850</a></li>
+                <li><a href=".html">REGERA</a></li>
+                <li><a href=".html">KONTAKT</a></li>
+            </ol>
         </div>
     </header>
+
     <div class="bild">
         <img src="bilder/Car.jpg" alt="koenigsegg">
     </div>
-    <footer>
+   
+    
+    <div class="wrapper">
+        <a href="https://www.koenigsegg.com/home" target="_blank" id="TitleLink">
+            <h1 id="Title1">Koenigsegg</h1>
+          </a>          
+            <div class="slider-outer">
+                <div class="slider-inner">
+                    <img src="bilder/Agera.jpg" alt="Agera" class="active">
+                    <img src="bilder/Gemera.jpg" alt="Gemera">
+                    <img src="bilder/Regera.jpg" alt="Regera">
+                </div>
+            </div>
+        </div>
+
+     <footer>
         
         <h1 id="skapare">
             Skapare
@@ -50,5 +70,10 @@
         </h1>
 
     </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
 </body>
 </html>
