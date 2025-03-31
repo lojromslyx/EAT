@@ -101,8 +101,85 @@ h1 {
     object-fit: cover;
     opacity: 0;
     transition: opacity 1s ease-in-out;
+
 }
 
+#skapare{
+
+    font-size: 200%;
+    margin-left: 5%;
+
+}
+
+#skapare1{
+
+    font-size: 50%;
+
+}
+
+#skapare2{
+
+    font-size: 50%;
+
+}
+
+#skapare3{
+
+    font-size: 50%;
+
+}
+
+#skapare-info{
+
+    font-size: 200%;
+    margin-left: 5%; 
+
+}
+
+#skapare-info1{
+
+    font-size: 50%;
+
+}
+
+#info{
+
+    font-size: 200%;
+    margin-left: 5%;
+
+}
+
+#info1{
+
+    font-size: 50%;
+
+}
+
+#uppdaterad{
+
+    font-size: 200%;
+    margin-left: 5%;
+
+}
+
+#uppdaterad1{
+
+    font-size: 50%;
+
+}
+
+#favorit{
+
+    font-size: 200%;
+    margin-left: 5%; 
+
+}
+
+#favorit1{
+
+    font-size: 50%;
+
+}
 
 .slider-inner img.active {
     opacity: 1;
@@ -116,7 +193,6 @@ h1 {
     overflow: hidden;
     margin-right: 3%;
 }
-Style
 
 body {
   background-color: #121212;
@@ -152,4 +228,36 @@ body {
     box-shadow: 20px 20px 40px #ffffffaa;
 }
 
+nav{
+    display: flex;
+    justify-content: space-evenly; /* lägger ut nav-objekt med lika stort mellanrum */
+    list-style: none;
+    font-family: "Alata", sans-serif; /* ändrar font på nav-objekt */
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+}
 
+nav a {
+    text-decoration: none; /* tar bort understreck*/
+    color: inherit; /* tar bort blå länk färg*/
+}
+
+nav a:hover {
+    color: #717171; /* Skapar en hover effekt på nav-objekt*/
+}
+
+.bild {
+    height: 520px; /* Anpassa efter bildens storlek */
+    width: 100%;
+    margin-top: 5px;
+}
+
+footer {
+    background-color: #666; /* Vit bakgrund */
+    height: 200px; /* Justera efter behov */
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    font-family: "Alata", sans-serif;
+}
