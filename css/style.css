@@ -194,13 +194,7 @@ h1 {
     margin-right: 3%;
 }
 
-body {
-  background-color: #121212;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+
 
 #Title1 {
     margin-top: 7%;
